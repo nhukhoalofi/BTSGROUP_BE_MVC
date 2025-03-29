@@ -1,0 +1,21 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "haha",
+  "main": "index.js",
+  "scripts": {
+    "test": "haha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "haha"
+  },
+  "keywords": [
+    "haha"
+  ],
+  "author": "Khoa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
