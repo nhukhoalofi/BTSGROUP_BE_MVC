@@ -1,17 +1,15 @@
-// src/app.js
 import express from 'express';
-import connectDB from './database/database.connection.js';
+import connectDB from './database/database.connection.js'; // nếu chưa có, mình sẽ gợi ý tạo
 import errorHandler from './middleware/error.middleware.js';
-import authRouter from './apis/auth/auth_router.js'; 
+import authRouter from './apis/auth/auth_router.js';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Kết nối DB
 connectDB().then(() => {
-  app.use('/api/auth', authRouter); 
+  app.use('/api/auth', authRouter); // ví dụ: /api/auth/register
   app.use(errorHandler);
 
   app.listen(port, () => {

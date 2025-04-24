@@ -2,9 +2,11 @@
   "name": "expressjs",
   "version": "1.0.0",
   "description": "haha",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "haha"
+    "test": "haha",
+    "start": "npm run src/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,10 @@
   "author": "Khoa",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2"
   }
 }
