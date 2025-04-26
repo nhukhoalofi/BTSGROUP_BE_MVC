@@ -1,3 +1,4 @@
+//Middleware xử lý lỗi chung cho toàn bộ hệ thống, để không cần try-catch ở từng API.
 const errorHandler = (err, req, res, next) => {
     console.log('ERROR LOG ', new Date().toLocaleString());
     console.log('Request:', req.method, req.originalUrl);

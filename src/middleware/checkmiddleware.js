@@ -1,3 +1,4 @@
+//	Middleware kiểm tra xác thực, phân quyền hoặc các điều kiện đặc biệt trước khi xử lý route.
 export function checkID(req, res, next) {
   let id = parseInt(req.params.id);
   if (isNaN(id) || id <= 0) {
