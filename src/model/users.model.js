@@ -6,7 +6,8 @@ const userSchema= new mongoose.Schema({
         email: {type:String, required:true},
         password: {type:String, required:true},
         resetPasswordToken: {type:String},
-        resetPasswordExpires: {type:String}     
+        resetPasswordExpires: {type:String},
+        avatarUrl: {type: String, default: ''}     
 });
 const UserModel= mongoose.model('User',userSchema);//liên kết với colection users
 export default UserModel;
